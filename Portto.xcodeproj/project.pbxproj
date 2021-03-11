@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,9 +11,33 @@
 		C2C350E525FA131700125F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C350E425FA131700125F3F /* AppDelegate.swift */; };
 		C2C350E725FA131700125F3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C350E625FA131700125F3F /* SceneDelegate.swift */; };
 		C2C350E925FA131700125F3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C350E825FA131700125F3F /* ViewController.swift */; };
-		C2C350EC25FA131700125F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C350EA25FA131700125F3F /* Main.storyboard */; };
 		C2C350EE25FA131A00125F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C350ED25FA131A00125F3F /* Assets.xcassets */; };
 		C2C350F125FA131A00125F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C350EF25FA131A00125F3F /* LaunchScreen.storyboard */; };
+		C2C3512325FA154100125F3F /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510125FA154100125F3F /* EncodableExtension.swift */; };
+		C2C3512425FA154100125F3F /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510225FA154100125F3F /* ArrayExtension.swift */; };
+		C2C3512525FA154100125F3F /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510325FA154100125F3F /* UIStackViewExtension.swift */; };
+		C2C3512625FA154100125F3F /* URLExtension+KingFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510425FA154100125F3F /* URLExtension+KingFisher.swift */; };
+		C2C3512725FA154100125F3F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510525FA154100125F3F /* StringExtension.swift */; };
+		C2C3512825FA154100125F3F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510625FA154100125F3F /* DateExtension.swift */; };
+		C2C3512925FA154100125F3F /* LayoutTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510825FA154100125F3F /* LayoutTool.swift */; };
+		C2C3512A25FA154100125F3F /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510A25FA154100125F3F /* NetworkServiceProvider.swift */; };
+		C2C3512B25FA154100125F3F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510B25FA154100125F3F /* NetworkService.swift */; };
+		C2C3512C25FA154100125F3F /* LayoutStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510E25FA154100125F3F /* LayoutStackView.swift */; };
+		C2C3512D25FA154100125F3F /* LayoutScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3510F25FA154100125F3F /* LayoutScrollView.swift */; };
+		C2C3512E25FA154100125F3F /* LayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511025FA154100125F3F /* LayoutButton.swift */; };
+		C2C3512F25FA154100125F3F /* LayoutImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511125FA154100125F3F /* LayoutImageView.swift */; };
+		C2C3513025FA154100125F3F /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511225FA154100125F3F /* LayoutView.swift */; };
+		C2C3513125FA154100125F3F /* LayoutTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511325FA154100125F3F /* LayoutTextField.swift */; };
+		C2C3513225FA154100125F3F /* LayoutTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511425FA154100125F3F /* LayoutTextView.swift */; };
+		C2C3513325FA154100125F3F /* LayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511525FA154100125F3F /* LayoutLabel.swift */; };
+		C2C3513425FA154100125F3F /* BasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511725FA154100125F3F /* BasedTableViewCell.swift */; };
+		C2C3513525FA154100125F3F /* BasedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511825FA154100125F3F /* BasedCollectionViewCell.swift */; };
+		C2C3513625FA154100125F3F /* BasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511925FA154100125F3F /* BasedView.swift */; };
+		C2C3513725FA154100125F3F /* AutoDisposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511B25FA154100125F3F /* AutoDisposer.swift */; };
+		C2C3513825FA154100125F3F /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511E25FA154100125F3F /* Gender.swift */; };
+		C2C3513925FA154100125F3F /* Constellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3511F25FA154100125F3F /* Constellation.swift */; };
+		C2C3513A25FA154100125F3F /* BasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3512125FA154100125F3F /* BasedViewController.swift */; };
+		C2C3513B25FA154100125F3F /* BasedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3512225FA154100125F3F /* BasedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +46,34 @@
 		C2C350E425FA131700125F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2C350E625FA131700125F3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C2C350E825FA131700125F3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C2C350EB25FA131700125F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2C350ED25FA131A00125F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2C350F025FA131A00125F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2C350F225FA131A00125F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2C3510125FA154100125F3F /* EncodableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		C2C3510225FA154100125F3F /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		C2C3510325FA154100125F3F /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		C2C3510425FA154100125F3F /* URLExtension+KingFisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLExtension+KingFisher.swift"; sourceTree = "<group>"; };
+		C2C3510525FA154100125F3F /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C2C3510625FA154100125F3F /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		C2C3510825FA154100125F3F /* LayoutTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutTool.swift; sourceTree = "<group>"; };
+		C2C3510A25FA154100125F3F /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		C2C3510B25FA154100125F3F /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C2C3510E25FA154100125F3F /* LayoutStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutStackView.swift; sourceTree = "<group>"; };
+		C2C3510F25FA154100125F3F /* LayoutScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutScrollView.swift; sourceTree = "<group>"; };
+		C2C3511025FA154100125F3F /* LayoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutButton.swift; sourceTree = "<group>"; };
+		C2C3511125FA154100125F3F /* LayoutImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutImageView.swift; sourceTree = "<group>"; };
+		C2C3511225FA154100125F3F /* LayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
+		C2C3511325FA154100125F3F /* LayoutTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutTextField.swift; sourceTree = "<group>"; };
+		C2C3511425FA154100125F3F /* LayoutTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutTextView.swift; sourceTree = "<group>"; };
+		C2C3511525FA154100125F3F /* LayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutLabel.swift; sourceTree = "<group>"; };
+		C2C3511725FA154100125F3F /* BasedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasedTableViewCell.swift; sourceTree = "<group>"; };
+		C2C3511825FA154100125F3F /* BasedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasedCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2C3511925FA154100125F3F /* BasedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasedView.swift; sourceTree = "<group>"; };
+		C2C3511B25FA154100125F3F /* AutoDisposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoDisposer.swift; sourceTree = "<group>"; };
+		C2C3511E25FA154100125F3F /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		C2C3511F25FA154100125F3F /* Constellation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constellation.swift; sourceTree = "<group>"; };
+		C2C3512125FA154100125F3F /* BasedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasedViewController.swift; sourceTree = "<group>"; };
+		C2C3512225FA154100125F3F /* BasedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasedViewModel.swift; sourceTree = "<group>"; };
 		EEBFEFBBD1DBE63863683090 /* Pods-Portto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portto.release.xcconfig"; path = "Target Support Files/Pods-Portto/Pods-Portto.release.xcconfig"; sourceTree = "<group>"; };
 		FB76151615913DA39792C992 /* Pods-Portto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portto.debug.xcconfig"; path = "Target Support Files/Pods-Portto/Pods-Portto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,15 +120,127 @@
 		C2C350E325FA131700125F3F /* Portto */ = {
 			isa = PBXGroup;
 			children = (
+				C2C350FF25FA154100125F3F /* ShaneToolbox */,
 				C2C350E425FA131700125F3F /* AppDelegate.swift */,
 				C2C350E625FA131700125F3F /* SceneDelegate.swift */,
 				C2C350E825FA131700125F3F /* ViewController.swift */,
-				C2C350EA25FA131700125F3F /* Main.storyboard */,
 				C2C350ED25FA131A00125F3F /* Assets.xcassets */,
 				C2C350EF25FA131A00125F3F /* LaunchScreen.storyboard */,
 				C2C350F225FA131A00125F3F /* Info.plist */,
 			);
 			path = Portto;
+			sourceTree = "<group>";
+		};
+		C2C350FF25FA154100125F3F /* ShaneToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3510025FA154100125F3F /* Extension */,
+				C2C3510725FA154100125F3F /* LayoutTool */,
+				C2C3510925FA154100125F3F /* Network */,
+				C2C3510C25FA154100125F3F /* View */,
+				C2C3511A25FA154100125F3F /* AutoDisposer */,
+				C2C3511C25FA154100125F3F /* DataModel */,
+				C2C3512025FA154100125F3F /* MVVM */,
+			);
+			path = ShaneToolbox;
+			sourceTree = "<group>";
+		};
+		C2C3510025FA154100125F3F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3510125FA154100125F3F /* EncodableExtension.swift */,
+				C2C3510225FA154100125F3F /* ArrayExtension.swift */,
+				C2C3510325FA154100125F3F /* UIStackViewExtension.swift */,
+				C2C3510425FA154100125F3F /* URLExtension+KingFisher.swift */,
+				C2C3510525FA154100125F3F /* StringExtension.swift */,
+				C2C3510625FA154100125F3F /* DateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C2C3510725FA154100125F3F /* LayoutTool */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3510825FA154100125F3F /* LayoutTool.swift */,
+			);
+			path = LayoutTool;
+			sourceTree = "<group>";
+		};
+		C2C3510925FA154100125F3F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3510A25FA154100125F3F /* NetworkServiceProvider.swift */,
+				C2C3510B25FA154100125F3F /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C2C3510C25FA154100125F3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3510D25FA154100125F3F /* Layout */,
+				C2C3511625FA154100125F3F /* Based */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2C3510D25FA154100125F3F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3510E25FA154100125F3F /* LayoutStackView.swift */,
+				C2C3510F25FA154100125F3F /* LayoutScrollView.swift */,
+				C2C3511025FA154100125F3F /* LayoutButton.swift */,
+				C2C3511125FA154100125F3F /* LayoutImageView.swift */,
+				C2C3511225FA154100125F3F /* LayoutView.swift */,
+				C2C3511325FA154100125F3F /* LayoutTextField.swift */,
+				C2C3511425FA154100125F3F /* LayoutTextView.swift */,
+				C2C3511525FA154100125F3F /* LayoutLabel.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		C2C3511625FA154100125F3F /* Based */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3511725FA154100125F3F /* BasedTableViewCell.swift */,
+				C2C3511825FA154100125F3F /* BasedCollectionViewCell.swift */,
+				C2C3511925FA154100125F3F /* BasedView.swift */,
+			);
+			path = Based;
+			sourceTree = "<group>";
+		};
+		C2C3511A25FA154100125F3F /* AutoDisposer */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3511B25FA154100125F3F /* AutoDisposer.swift */,
+			);
+			path = AutoDisposer;
+			sourceTree = "<group>";
+		};
+		C2C3511C25FA154100125F3F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3511D25FA154100125F3F /* Member */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		C2C3511D25FA154100125F3F /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3511E25FA154100125F3F /* Gender.swift */,
+				C2C3511F25FA154100125F3F /* Constellation.swift */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		C2C3512025FA154100125F3F /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3512125FA154100125F3F /* BasedViewController.swift */,
+				C2C3512225FA154100125F3F /* BasedViewModel.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		F23EECDC338F0055C4F01DB3 /* Frameworks */ = {
@@ -152,7 +312,6 @@
 			files = (
 				C2C350F125FA131A00125F3F /* LaunchScreen.storyboard in Resources */,
 				C2C350EE25FA131A00125F3F /* Assets.xcassets in Resources */,
-				C2C350EC25FA131700125F3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,23 +364,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C3512625FA154100125F3F /* URLExtension+KingFisher.swift in Sources */,
+				C2C3512925FA154100125F3F /* LayoutTool.swift in Sources */,
+				C2C3513325FA154100125F3F /* LayoutLabel.swift in Sources */,
+				C2C3512C25FA154100125F3F /* LayoutStackView.swift in Sources */,
+				C2C3512425FA154100125F3F /* ArrayExtension.swift in Sources */,
+				C2C3512525FA154100125F3F /* UIStackViewExtension.swift in Sources */,
+				C2C3513B25FA154100125F3F /* BasedViewModel.swift in Sources */,
+				C2C3513525FA154100125F3F /* BasedCollectionViewCell.swift in Sources */,
+				C2C3513725FA154100125F3F /* AutoDisposer.swift in Sources */,
+				C2C3513425FA154100125F3F /* BasedTableViewCell.swift in Sources */,
 				C2C350E925FA131700125F3F /* ViewController.swift in Sources */,
+				C2C3512E25FA154100125F3F /* LayoutButton.swift in Sources */,
+				C2C3513825FA154100125F3F /* Gender.swift in Sources */,
+				C2C3513625FA154100125F3F /* BasedView.swift in Sources */,
+				C2C3512825FA154100125F3F /* DateExtension.swift in Sources */,
+				C2C3512D25FA154100125F3F /* LayoutScrollView.swift in Sources */,
+				C2C3512725FA154100125F3F /* StringExtension.swift in Sources */,
+				C2C3512325FA154100125F3F /* EncodableExtension.swift in Sources */,
+				C2C3513125FA154100125F3F /* LayoutTextField.swift in Sources */,
 				C2C350E525FA131700125F3F /* AppDelegate.swift in Sources */,
+				C2C3512F25FA154100125F3F /* LayoutImageView.swift in Sources */,
+				C2C3512A25FA154100125F3F /* NetworkServiceProvider.swift in Sources */,
+				C2C3512B25FA154100125F3F /* NetworkService.swift in Sources */,
 				C2C350E725FA131700125F3F /* SceneDelegate.swift in Sources */,
+				C2C3513925FA154100125F3F /* Constellation.swift in Sources */,
+				C2C3513A25FA154100125F3F /* BasedViewController.swift in Sources */,
+				C2C3513025FA154100125F3F /* LayoutView.swift in Sources */,
+				C2C3513225FA154100125F3F /* LayoutTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C2C350EA25FA131700125F3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2C350EB25FA131700125F3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C2C350EF25FA131A00125F3F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
