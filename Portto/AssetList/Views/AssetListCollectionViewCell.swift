@@ -11,11 +11,12 @@ class AssetListCollectionViewCell: BasedCollectionViewCell {
     var asset: Asset? {
         didSet {
             imageView.kf.setImage(with: asset?.image_thumbnail_url?.imageResource)
+            textLabel.text = asset?.name
         }
     }
     
-    lazy var imageView = LayoutImageView()
-    lazy var textLabel = LayoutLabel(textColor: .systemGray4, textAlignment: .center, fontSize: 18.basedOnScreenWidth(), fontWeight: .medium)
+    private lazy var imageView = LayoutImageView()
+    private lazy var textLabel = LayoutLabel(textColor: .systemGray4, textAlignment: .center, fontSize: 18.basedOnScreenWidth(), fontWeight: .medium)
     
     override func setUpAndLayoutViews() {
         super.setUpAndLayoutViews()
@@ -31,6 +32,5 @@ class AssetListCollectionViewCell: BasedCollectionViewCell {
             textLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             textLabel.widthAnchor.constraint(lessThanOrEqualTo: contentView.widthAnchor, multiplier: (15 / 16))
         ])
-        
     }
 }

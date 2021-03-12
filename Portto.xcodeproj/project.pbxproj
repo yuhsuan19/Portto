@@ -133,6 +133,7 @@
 				C2C350E425FA131700125F3F /* AppDelegate.swift */,
 				C2C350E625FA131700125F3F /* SceneDelegate.swift */,
 				C2C3517F25FB06B700125F3F /* AssetList */,
+				C2D3513A25FB51AA0041ADC1 /* Asset */,
 				C2C3513D25FA159A00125F3F /* ViewControllers */,
 				C2C350ED25FA131A00125F3F /* Assets.xcassets */,
 				C2C350EF25FA131A00125F3F /* LaunchScreen.storyboard */,
@@ -301,6 +302,13 @@
 				C2D3511925FB44A00041ADC1 /* AssetListCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C2D3513A25FB51AA0041ADC1 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Asset;
 			sourceTree = "<group>";
 		};
 		F23EECDC338F0055C4F01DB3 /* Frameworks */ = {
