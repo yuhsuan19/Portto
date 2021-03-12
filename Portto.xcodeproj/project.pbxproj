@@ -40,6 +40,8 @@
 		C2C3517825FA731800125F3F /* OpenSeaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3517725FA731800125F3F /* OpenSeaAPI.swift */; };
 		C2C3518125FB06CA00125F3F /* AssetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3518025FB06CA00125F3F /* AssetListViewController.swift */; };
 		C2C3518525FB06D700125F3F /* AssetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3518425FB06D700125F3F /* AssetListViewModel.swift */; };
+		C2D350DC25FB28D80041ADC1 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D350DB25FB28D80041ADC1 /* Asset.swift */; };
+		C2D3511A25FB44A00041ADC1 /* AssetListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3511925FB44A00041ADC1 /* AssetListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		C2C3517725FA731800125F3F /* OpenSeaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaAPI.swift; sourceTree = "<group>"; };
 		C2C3518025FB06CA00125F3F /* AssetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListViewController.swift; sourceTree = "<group>"; };
 		C2C3518425FB06D700125F3F /* AssetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListViewModel.swift; sourceTree = "<group>"; };
+		C2D350DB25FB28D80041ADC1 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		C2D3511925FB44A00041ADC1 /* AssetListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListCollectionViewCell.swift; sourceTree = "<group>"; };
 		EEBFEFBBD1DBE63863683090 /* Pods-Portto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portto.release.xcconfig"; path = "Target Support Files/Pods-Portto/Pods-Portto.release.xcconfig"; sourceTree = "<group>"; };
 		FB76151615913DA39792C992 /* Pods-Portto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portto.debug.xcconfig"; path = "Target Support Files/Pods-Portto/Pods-Portto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +263,7 @@
 		C2C3514B25FA168D00125F3F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C2D350DA25FB28C60041ADC1 /* Models */,
 				C2C3517625FA72FA00125F3F /* NetworkAPI */,
 			);
 			path = Common;
@@ -277,8 +282,25 @@
 			children = (
 				C2C3518025FB06CA00125F3F /* AssetListViewController.swift */,
 				C2C3518425FB06D700125F3F /* AssetListViewModel.swift */,
+				C2D3511825FB44780041ADC1 /* Views */,
 			);
 			path = AssetList;
+			sourceTree = "<group>";
+		};
+		C2D350DA25FB28C60041ADC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2D350DB25FB28D80041ADC1 /* Asset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2D3511825FB44780041ADC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3511925FB44A00041ADC1 /* AssetListCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F23EECDC338F0055C4F01DB3 /* Frameworks */ = {
@@ -410,6 +432,7 @@
 				C2C3512525FA154100125F3F /* UIStackViewExtension.swift in Sources */,
 				C2C3518125FB06CA00125F3F /* AssetListViewController.swift in Sources */,
 				C2C3518525FB06D700125F3F /* AssetListViewModel.swift in Sources */,
+				C2D350DC25FB28D80041ADC1 /* Asset.swift in Sources */,
 				C2C3513B25FA154100125F3F /* BasedViewModel.swift in Sources */,
 				C2C3513525FA154100125F3F /* BasedCollectionViewCell.swift in Sources */,
 				C2C3517825FA731800125F3F /* OpenSeaAPI.swift in Sources */,
@@ -430,6 +453,7 @@
 				C2C350E725FA131700125F3F /* SceneDelegate.swift in Sources */,
 				C2C3513925FA154100125F3F /* Constellation.swift in Sources */,
 				C2C3513A25FA154100125F3F /* BasedViewController.swift in Sources */,
+				C2D3511A25FB44A00041ADC1 /* AssetListCollectionViewCell.swift in Sources */,
 				C2C3513025FA154100125F3F /* LayoutView.swift in Sources */,
 				C2C3513225FA154100125F3F /* LayoutTextView.swift in Sources */,
 			);

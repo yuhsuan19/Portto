@@ -8,7 +8,7 @@
 import UIKit
 
 class AssetListViewController: BasedViewController<AssetListViewModel> {
-
+    
     init() {
         super.init(viewModel: AssetListViewModel())
     }

@@ -10,15 +10,26 @@ import Foundation
 class AssetListViewModel: BasedViewModel {
     
     var offset: Int = 0
+    var assets: [Asset] = []
     
     func fetchAssets() {
-        networkServiceProvider.request(for: OpenSeaAPI.assets(offset: offset)) { (result) in
+        networkServiceProvider.request(for: OpenSeaAPI.assets(offset: offset)) { [weak self] (result) in
             switch result {
             case .success(let response):
-                break
+                guard let parser = try? JSONDecoder().decode(AssetList.self, from: response.data) else {
+                    return
+                }
+                self?.assets.append(contentsOf: parser.assets)
+                
             case .failure(let error):
                 break
             }
         }
+    }
+}
+
+extension AssetListViewModel {
+    struct AssetList: Decodable {
+        var assets: [Asset]
     }
 }
