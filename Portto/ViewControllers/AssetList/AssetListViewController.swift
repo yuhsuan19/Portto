@@ -42,6 +42,8 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
     
     override func setUpAndLayoutViews() {
         super.setUpAndLayoutViews()
+        
+        title = "Assets"
         view.backgroundColor = .systemBackground
         view.addSafeFilledSubview(collectionView)
     }
