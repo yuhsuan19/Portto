@@ -20,7 +20,7 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
         
         collectionView.register(AssetListCollectionViewCell.self, forCellWithReuseIdentifier: "AssetList")
         collectionView.delegate = self
-        collectionView.dataSource = viewModel
+        collectionView.dataSource = self
         return collectionView
     }()
     
@@ -69,6 +69,7 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
         }
     }
 }
+
 // MARK: UICollectionView delegate
 extension AssetListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -81,5 +82,18 @@ extension AssetListViewController: UICollectionViewDelegate {
         if indexPath.item > viewModel.assets.count - 8 {
             viewModel.fetchAssets()
         }
+    }
+}
+
+// MARK: UICollectionView data source
+extension AssetListViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.assets.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AssetList", for: indexPath) as! AssetListCollectionViewCell
+        cell.asset = viewModel.assets[indexPath.item]
+        return cell
     }
 }

@@ -43,19 +43,6 @@ class AssetListViewModel: BasedViewModel {
     }
 }
 
-// MARK: UICollectionView data source
-extension AssetListViewModel: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return assets.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AssetList", for: indexPath) as! AssetListCollectionViewCell
-        cell.asset = assets[indexPath.item]
-        return cell
-    }
-}
-
 extension AssetListViewModel {
     struct AssetList: Decodable {
         var assets: [Asset]
