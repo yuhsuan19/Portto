@@ -10,27 +10,36 @@ import UIKit
 
 class AssetListViewModel: BasedViewModel {
     
-    var offset: Int = 0
+    // MARK: Fetch assets
+    var isLoadAll: Bool = false
+    
     var assets: [Asset] = [] {
         didSet {
             
         }
     }
-    
     var onAssetsFetch: ((Error?) -> Void)?
     
     func fetchAssets() {
-        networkServiceProvider.request(for: OpenSeaAPI.assets(offset: offset)) { [weak self] (result) in
+        guard !isLoading && !isLoadAll else {
+            return
+        }
+        
+        isLoading = true
+        networkServiceProvider.request(for: OpenSeaAPI.assets(offset: assets.count)) { [weak self] (result) in
             switch result {
             case .success(let response):
                 guard let parser = try? JSONDecoder().decode(AssetList.self, from: response.data) else {
+                    self?.isLoading = false
                     return
                 }
                 self?.assets.append(contentsOf: parser.assets)
                 self?.onAssetsFetch?(nil)
+                self?.isLoadAll = parser.assets.count < 20
             case .failure(let error):
                 break
             }
+            self?.isLoading = false
         }
     }
 }

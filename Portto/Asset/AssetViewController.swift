@@ -64,7 +64,7 @@ class AssetViewController: BasedViewController<AssetViewModel> {
             descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 15.basedOnScreenWidth()),
             descriptionLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             descriptionLabel.widthAnchor.constraint(lessThanOrEqualTo: imageView.widthAnchor),
-            descriptionLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -15.basedOnScreenWidth())
+            descriptionLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -90.basedOnScreenWidth())
         ])
         
         view.addCenterXSubview(actionButton)

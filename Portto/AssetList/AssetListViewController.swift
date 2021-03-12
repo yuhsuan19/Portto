@@ -8,7 +8,6 @@
 import UIKit
 
 class AssetListViewController: BasedViewController<AssetListViewModel> {
-    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 5.basedOnScreenWidth(), left: 10.basedOnScreenWidth(), bottom: 5.basedOnScreenWidth(), right: 10.basedOnScreenWidth())
@@ -16,8 +15,8 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .clear
-        collectionView.register(AssetListCollectionViewCell.self, forCellWithReuseIdentifier: "AssetList")
         
+        collectionView.register(AssetListCollectionViewCell.self, forCellWithReuseIdentifier: "AssetList")
         collectionView.delegate = self
         collectionView.dataSource = viewModel
         return collectionView
@@ -58,5 +57,11 @@ extension AssetListViewController: UICollectionViewDelegate {
         let asset = viewModel.assets[indexPath.item]
         let assetPage = AssetViewController(asset: asset)
         navigationController?.pushViewController(assetPage, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.item > viewModel.assets.count - 8 {
+            viewModel.fetchAssets()
+        }
     }
 }
