@@ -16,7 +16,7 @@ class AssetListCollectionViewCell: BasedCollectionViewCell {
     }
     
     private lazy var imageView = LayoutImageView()
-    private lazy var textLabel = LayoutLabel(textColor: .systemGray4, textAlignment: .center, fontSize: 18.basedOnScreenWidth(), fontWeight: .medium)
+    private lazy var textLabel = LayoutLabel(textColor: .secondaryLabel, textAlignment: .center, fontSize: 18.basedOnScreenWidth(), fontWeight: .medium)
     
     override func setUpAndLayoutViews() {
         super.setUpAndLayoutViews()

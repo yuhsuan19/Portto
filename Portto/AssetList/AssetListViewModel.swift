@@ -35,7 +35,7 @@ class AssetListViewModel: BasedViewModel {
     }
 }
 
-extension AssetListViewModel: UICollectionViewDelegate, UICollectionViewDataSource {
+extension AssetListViewModel: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return assets.count
     }
@@ -44,10 +44,6 @@ extension AssetListViewModel: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AssetList", for: indexPath) as! AssetListCollectionViewCell
         cell.asset = assets[indexPath.item]
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(assets[indexPath.item])
     }
 }
 

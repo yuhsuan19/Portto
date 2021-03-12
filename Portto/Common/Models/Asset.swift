@@ -16,7 +16,10 @@ struct Asset: Decodable {
     let permalink: URL?
     
     let collection: Collection?
-    
+ 
+    var desc: String {
+        return description ?? "No description"
+    }
 }
 
 extension Asset {

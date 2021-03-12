@@ -18,7 +18,7 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
         collectionView.backgroundColor = .clear
         collectionView.register(AssetListCollectionViewCell.self, forCellWithReuseIdentifier: "AssetList")
         
-        collectionView.delegate = viewModel
+        collectionView.delegate = self
         collectionView.dataSource = viewModel
         return collectionView
     }()
@@ -51,5 +51,12 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
         viewModel.onAssetsFetch = { [weak self] (error) in
             self?.collectionView.reloadData()
         }
+    }
+}
+extension AssetListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let asset = viewModel.assets[indexPath.item]
+        let assetPage = AssetViewController(asset: asset)
+        navigationController?.pushViewController(assetPage, animated: true)
     }
 }
