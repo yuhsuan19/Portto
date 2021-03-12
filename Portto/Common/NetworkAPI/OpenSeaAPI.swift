@@ -8,7 +8,7 @@
 import Foundation
 
 enum OpenSeaAPI {
-    case assets(offset: Int = 0)
+    case assets(offset: Int = 0, perPageAmount: Int = 20)
 }
 
 extension OpenSeaAPI: NetworkService {
@@ -36,11 +36,11 @@ extension OpenSeaAPI: NetworkService {
     
     var parameters: [String : Any?]? {
         switch self {
-        case .assets(let offset):
+        case .assets(let offset, let perPageAmount):
             return [
                 "owner": "0x960DE9907A2e2f5363646d48D7FB675Cd2892e91",
                 "format": "json",
-                "limit": 20,
+                "limit": perPageAmount,
                 "offset": offset
             ]
         }

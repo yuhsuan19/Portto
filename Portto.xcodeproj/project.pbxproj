@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		48EBFEDAB7FE0F9321C3A8F6 /* Pods_Portto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5672C80909976C7CEB282 /* Pods_Portto.framework */; };
+		C2B3C8EF25FB686400E499E1 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = C2B3C8EE25FB686400E499E1 /* loading.json */; };
+		C2B3C8F425FB689200E499E1 /* AppLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C8F325FB689200E499E1 /* AppLoadingView.swift */; };
+		C2B3C8FF25FB6F1700E499E1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C8FE25FB6F1700E499E1 /* AppError.swift */; };
+		C2B3C92125FB70EE00E499E1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C92025FB70EE00E499E1 /* UIViewControllerExtension.swift */; };
 		C2C350E525FA131700125F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C350E425FA131700125F3F /* AppDelegate.swift */; };
 		C2C350E725FA131700125F3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C350E625FA131700125F3F /* SceneDelegate.swift */; };
 		C2C350EE25FA131A00125F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C350ED25FA131A00125F3F /* Assets.xcassets */; };
@@ -48,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		28E5672C80909976C7CEB282 /* Pods_Portto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B3C8EE25FB686400E499E1 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		C2B3C8F325FB689200E499E1 /* AppLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLoadingView.swift; sourceTree = "<group>"; };
+		C2B3C8FE25FB6F1700E499E1 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		C2B3C92025FB70EE00E499E1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		C2C350E125FA131700125F3F /* Portto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C350E425FA131700125F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2C350E625FA131700125F3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,55 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C2B3C8EC25FB683C00E499E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2B3C8ED25FB686400E499E1 /* Lottie */,
+				C2C350ED25FA131A00125F3F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2B3C8ED25FB686400E499E1 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				C2B3C8EE25FB686400E499E1 /* loading.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		C2B3C8F125FB686C00E499E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2B3C8F225FB689200E499E1 /* AppLoadingview */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2B3C8F225FB689200E499E1 /* AppLoadingview */ = {
+			isa = PBXGroup;
+			children = (
+				C2B3C8F325FB689200E499E1 /* AppLoadingView.swift */,
+			);
+			path = AppLoadingview;
+			sourceTree = "<group>";
+		};
+		C2B3C8FD25FB6F1700E499E1 /* AppError */ = {
+			isa = PBXGroup;
+			children = (
+				C2B3C8FE25FB6F1700E499E1 /* AppError.swift */,
+			);
+			path = AppError;
+			sourceTree = "<group>";
+		};
+		C2B3C91F25FB70EE00E499E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2B3C92025FB70EE00E499E1 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C2C350D825FA131700125F3F = {
 			isa = PBXGroup;
 			children = (
@@ -136,10 +193,8 @@
 				C2C3514B25FA168D00125F3F /* Common */,
 				C2C350E425FA131700125F3F /* AppDelegate.swift */,
 				C2C350E625FA131700125F3F /* SceneDelegate.swift */,
-				C2C3517F25FB06B700125F3F /* AssetList */,
-				C2D3513A25FB51AA0041ADC1 /* Asset */,
 				C2C3513D25FA159A00125F3F /* ViewControllers */,
-				C2C350ED25FA131A00125F3F /* Assets.xcassets */,
+				C2B3C8EC25FB683C00E499E1 /* Resources */,
 				C2C350EF25FA131A00125F3F /* LaunchScreen.storyboard */,
 				C2C350F225FA131A00125F3F /* Info.plist */,
 			);
@@ -261,6 +316,8 @@
 		C2C3513D25FA159A00125F3F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C2C3517F25FB06B700125F3F /* AssetList */,
+				C2D3513A25FB51AA0041ADC1 /* Asset */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -268,6 +325,9 @@
 		C2C3514B25FA168D00125F3F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C2B3C91F25FB70EE00E499E1 /* Extensions */,
+				C2B3C8FD25FB6F1700E499E1 /* AppError */,
+				C2B3C8F125FB686C00E499E1 /* Views */,
 				C2D350DA25FB28C60041ADC1 /* Models */,
 				C2C3517625FA72FA00125F3F /* NetworkAPI */,
 			);
@@ -386,6 +446,7 @@
 			files = (
 				C2C350F125FA131A00125F3F /* LaunchScreen.storyboard in Resources */,
 				C2C350EE25FA131A00125F3F /* Assets.xcassets in Resources */,
+				C2B3C8EF25FB686400E499E1 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,10 +519,13 @@
 				C2C3513625FA154100125F3F /* BasedView.swift in Sources */,
 				C2C3512825FA154100125F3F /* DateExtension.swift in Sources */,
 				C2C3512D25FA154100125F3F /* LayoutScrollView.swift in Sources */,
+				C2B3C8FF25FB6F1700E499E1 /* AppError.swift in Sources */,
 				C2C3512725FA154100125F3F /* StringExtension.swift in Sources */,
 				C2C3512325FA154100125F3F /* EncodableExtension.swift in Sources */,
 				C2C3513125FA154100125F3F /* LayoutTextField.swift in Sources */,
+				C2B3C92125FB70EE00E499E1 /* UIViewControllerExtension.swift in Sources */,
 				C2C350E525FA131700125F3F /* AppDelegate.swift in Sources */,
+				C2B3C8F425FB689200E499E1 /* AppLoadingView.swift in Sources */,
 				C2C3512F25FA154100125F3F /* LayoutImageView.swift in Sources */,
 				C2C3512A25FA154100125F3F /* NetworkServiceProvider.swift in Sources */,
 				C2C3512B25FA154100125F3F /* NetworkService.swift in Sources */,

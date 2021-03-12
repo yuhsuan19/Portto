@@ -8,6 +8,8 @@
 import UIKit
 
 class AssetListViewController: BasedViewController<AssetListViewModel> {
+    lazy var loadingView = AppLoadingView()
+
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 5.basedOnScreenWidth(), left: 10.basedOnScreenWidth(), bottom: 5.basedOnScreenWidth(), right: 10.basedOnScreenWidth())
@@ -47,11 +49,25 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
     override func bindViewModel() {
         super.bindViewModel()
         
+        viewModel.onLoading = { [weak self] in
+            guard let self = self else {
+                return
+            }
+            (self.viewModel.isLoading && self.viewModel.assets.isEmpty) ? self.loadingView.show(on: self.view) : self.loadingView.hide()
+        }
+        
         viewModel.onAssetsFetch = { [weak self] (error) in
-            self?.collectionView.reloadData()
+            if let error = error {
+                if (self?.viewModel.assets.isEmpty ?? true) {
+                    self?.showError(error)
+                }
+            } else {
+                self?.collectionView.reloadData()
+            }
         }
     }
 }
+// MARK: UICollectionView delegate
 extension AssetListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let asset = viewModel.assets[indexPath.item]
