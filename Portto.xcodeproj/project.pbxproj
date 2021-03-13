@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48EBFEDAB7FE0F9321C3A8F6 /* Pods_Portto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5672C80909976C7CEB282 /* Pods_Portto.framework */; };
+		C23919A925FD242B00FEC317 /* InfuraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23919A825FD242B00FEC317 /* InfuraAPI.swift */; };
 		C2B3C8EF25FB686400E499E1 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = C2B3C8EE25FB686400E499E1 /* loading.json */; };
 		C2B3C8F425FB689200E499E1 /* AppLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C8F325FB689200E499E1 /* AppLoadingView.swift */; };
 		C2B3C8FF25FB6F1700E499E1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C8FE25FB6F1700E499E1 /* AppError.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		28E5672C80909976C7CEB282 /* Pods_Portto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23919A825FD242B00FEC317 /* InfuraAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfuraAPI.swift; sourceTree = "<group>"; };
 		C2B3C8EE25FB686400E499E1 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		C2B3C8F325FB689200E499E1 /* AppLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLoadingView.swift; sourceTree = "<group>"; };
 		C2B3C8FE25FB6F1700E499E1 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				C2C3517725FA731800125F3F /* OpenSeaAPI.swift */,
+				C23919A825FD242B00FEC317 /* InfuraAPI.swift */,
 			);
 			path = NetworkAPI;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				C2C3512425FA154100125F3F /* ArrayExtension.swift in Sources */,
 				C2C3512525FA154100125F3F /* UIStackViewExtension.swift in Sources */,
 				C2C3518125FB06CA00125F3F /* AssetListViewController.swift in Sources */,
+				C23919A925FD242B00FEC317 /* InfuraAPI.swift in Sources */,
 				C2C3518525FB06D700125F3F /* AssetListViewModel.swift in Sources */,
 				C2D350DC25FB28D80041ADC1 /* Asset.swift in Sources */,
 				C2C3513B25FA154100125F3F /* BasedViewModel.swift in Sources */,
