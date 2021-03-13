@@ -53,6 +53,4 @@ extension InfuraAPI: NetworkService {
     var uploadContent: UploadContent? {
         return nil
     }
-    
-    
 }

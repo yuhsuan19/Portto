@@ -37,13 +37,14 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.fetchETHBalance()
         viewModel.fetchAssets()
     }
     
     override func setUpAndLayoutViews() {
         super.setUpAndLayoutViews()
         
-        title = "Assets"
+        title = "Balance: Fetching..."
         view.backgroundColor = .systemBackground
         view.addSafeFilledSubview(collectionView)
     }
@@ -65,6 +66,18 @@ class AssetListViewController: BasedViewController<AssetListViewModel> {
                 }
             } else {
                 self?.collectionView.reloadData()
+            }
+        }
+        
+        viewModel.onETHBalanceFetch = { [weak self] (error) in
+            guard let self = self else {
+                return
+            }
+            
+            if let _ = error {
+                self.title = "Balance: Fail to fetch"
+            } else {
+                self.title = "Balance: \(self.viewModel.ethBalance) ETH"
             }
         }
     }
