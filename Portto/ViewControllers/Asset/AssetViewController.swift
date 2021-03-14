@@ -52,14 +52,15 @@ class AssetViewController: BasedViewController<AssetViewModel> {
     }
     
     // MARK: View life cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func setUpAndLayoutViews() {
+        super.setUpAndLayoutViews()
         
         title = viewModel.asset.collection?.name
         view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(
+            title: "Asset List", style: .plain, target: nil, action: nil)
         
         view.addFilledSubView(scrollView)
-        
         scrollView.addCenterXSubview(imageView)
         scrollView.addSubview(nameLabel)
         scrollView.addSubview(descriptionLabel)
