@@ -1,7 +1,7 @@
 # Portto
 ## Installation
   * `pod init`
-  *  open the .xcworkspace file
+  *  Open the .xcworkspace file
   *  Run the app
 ## Design Pattern
   * MVVM (use closure to implement data binding)
