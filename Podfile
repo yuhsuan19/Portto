@@ -8,6 +8,6 @@ target 'Portto' do
   # Pods for Portto
   pod 'Alamofire', '4.9.1'
   pod 'SwiftyJSON', '5.0.0' # for console debug
-  pod 'Kingfisher', '~> 6.0.0'
+  pod 'Kingfisher', '4.7.0'
   pod 'lottie-ios', '3.1.9'
 end

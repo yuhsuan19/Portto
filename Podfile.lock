@@ -1,12 +1,12 @@
 PODS:
   - Alamofire (4.9.1)
-  - Kingfisher (6.0.1)
+  - Kingfisher (4.7.0)
   - lottie-ios (3.1.9)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (= 4.9.1)
-  - Kingfisher (~> 6.0.0)
+  - Kingfisher (= 4.7.0)
   - lottie-ios (= 3.1.9)
   - SwiftyJSON (= 5.0.0)
 
@@ -19,10 +19,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 109b858176f3558756ff99006497d156ef33a7fd
+PODFILE CHECKSUM: fd2c0996b428341e1821050cb409aa031c511c06
 
 COCOAPODS: 1.9.3

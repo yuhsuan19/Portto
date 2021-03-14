@@ -6,15 +6,24 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AssetViewController: BasedViewController<AssetViewModel> {
     private lazy var scrollView = LayoutScrollView()
     
     private lazy var imageView: LayoutImageView = {
         let imageView = LayoutImageView()
-        imageView.kf.setImage(with: viewModel.asset.image_url?.imageResource)
+        imageView.kf.setImage(with: viewModel.asset.image_url?.imageResource, placeholder: nil, options: nil, progressBlock: nil) { [weak self] (image, _, _, _) in
+            if let image = image {
+                self?.imageViewHeightConstraint?.constant = (image.size.height / image.size.width) * 300.basedOnScreenHeight()
+                self?.view.layoutIfNeeded()
+            } else {
+                self?.imageView.backgroundColor = .systemGray5
+            }
+        }
         return imageView
     }()
+    var imageViewHeightConstraint: NSLayoutConstraint?
     
     private lazy var nameLabel = LayoutLabel(text: viewModel.asset.name, textColor: .secondaryLabel, fontSize: 18.basedOnScreenWidth(), fontWeight: .medium)
     
@@ -52,12 +61,14 @@ class AssetViewController: BasedViewController<AssetViewModel> {
         view.addFilledSubView(scrollView)
         
         scrollView.addCenterXSubview(imageView)
-        imageView.squared(size: 300.basedOnScreenWidth())
         scrollView.addSubview(nameLabel)
         scrollView.addSubview(descriptionLabel)
+        imageViewHeightConstraint = imageView.heightAnchor.constraint(equalToConstant: 300.basedOnScreenWidth())
+        imageViewHeightConstraint?.isActive = true
         
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 25.basedOnScreenWidth()),
+            imageView.widthAnchor.constraint(equalToConstant: 300.basedOnScreenWidth()),
             nameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20.basedOnScreenWidth()),
             nameLabel.leadingAnchor.constraint(equalTo: imageView.leadingAnchor),
             nameLabel.widthAnchor.constraint(lessThanOrEqualTo: imageView.widthAnchor),
