@@ -14,12 +14,7 @@ class AssetViewController: BasedViewController<AssetViewModel> {
     private lazy var imageView: LayoutImageView = {
         let imageView = LayoutImageView()
         imageView.kf.setImage(with: viewModel.asset.image_url?.imageResource, placeholder: nil, options: nil, progressBlock: nil) { [weak self] (image, _, _, _) in
-            if let image = image {
-                self?.imageViewHeightConstraint?.constant = (image.size.height / image.size.width) * 300.basedOnScreenHeight()
-                self?.view.layoutIfNeeded()
-            } else {
-                self?.imageView.backgroundColor = .systemGray5
-            }
+            self?.layoutImageView(image)
         }
         return imageView
     }()
@@ -90,6 +85,15 @@ class AssetViewController: BasedViewController<AssetViewModel> {
                 return
             }
             self.actionButton.layer.cornerRadius = self.actionButton.bounds.height * 0.5
+        }
+    }
+    
+    private func layoutImageView(_ image: Image?) {
+        if let image = image {
+            imageViewHeightConstraint?.constant = (image.size.height / image.size.width) * 300.basedOnScreenWidth()
+            view.layoutIfNeeded()
+        } else {
+            imageView.backgroundColor = .systemGray5
         }
     }
     
