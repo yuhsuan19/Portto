@@ -1,4 +1,5 @@
 # Portto
+Assignment for Portto's（門戶科技） job interview.
 ## Installation
   * `pod init`
   *  Open the .xcworkspace file
